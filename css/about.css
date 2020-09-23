@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
+html {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container {
+    max-width: 1336px;
+    margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: #fff;
+}
+
+.logo {
+  margin-right: 990px;
+}
+
+header a img {
+  width: 165px;
+  height: 50px;
+  margin: 50px 110px;
+  
+}
+
+ul {
+  display: flex;
+  /* padding: 80px; */
+  padding-top: 80px;
+}
+
+ul li a {
+  font-family: 'Rubik', sans-serif;
+  color: #3D3D3D;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 77px 70px 43px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #FDD000;
+  position: relative;
+  top: 6px;
+  opacity: 0;
+}
+
+.circle_1 {
+  left: 102px;
+}
+
+.circle_2 {
+  left: 131px;
+}
+
+ul li:hover .circle {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.about h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.68px;
+    font-size: 34px;
+    color: #3D3D3D;
+    padding-top: 99px;
+}
+
+.about {
+    padding-bottom: 130px;
+}
+
+.about p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: 20px;
+    color: #3D3D3D;
+    padding-top: 65px;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 768px) { 
+  .logo {
+    margin-right: 20px;
+  }
+  header a img {
+    margin: 30px 60px;
+  }
+  ul {
+    padding-top: 60px;
+  }
+  ul li a {
+    font-size: 25px;
+    padding: 77px 50px 43px;
+  }
+  .circle_1 {
+    left: 77px;
+  }
+  .circle_2 {
+    left: 103px;
+  }
+  
+  .about h2 {
+    font-size: 28px;
+    padding-top: 76px;
+    margin-left: 55px;
+}
+.about p {
+  font-size: 17px;
+  padding-top: 21px;
+  line-height: 28px;
+  margin-left: 55px;
+}
+}
+
+
+@media screen and (max-width: 480px) { 
+  header a img {
+    width: 100px;
+    height: 35px;
+    margin: 25px 30px;
+}
+ul {
+  padding-top: 40px;
+}
+ul li a {
+  font-size: 20px;
+  padding: 41px 27px 21px;
+}
+.circle_1 {
+  left: 48px;
+}
+.circle_2 {
+  left: 68px;
+}
+.about h2 {
+  font-size: 26px;
+  padding-top: 26px;
+}
+.about p {
+  line-height: 25px;
+  margin-right: 25px;
+}
+}
